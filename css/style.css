@@ -55,6 +55,17 @@ body {
     color: white;
 }
 
+.head-text button:hover {
+    background-color: white;
+    border: 1px solid lightsalmon;
+    transform: scale(1.2);
+    color: #161616;
+}
+
+.head-text button a:hover {
+    color: #161616;
+}
+
 /* header image section */
 .head-image img {
     width: 581px;
@@ -161,12 +172,29 @@ aside {
     top: 7px;
 }
 
+.view-all button {
+    background-color: #DD0000;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 40px;
+    left: 500px;
+    visibility: hidden;
+}
+
+.view-all button a {
+    color: white;
+    font-size: 16px;
+}
+
 /* footer section */
-.footer-bg{
+.footer-bg {
     background-color: #161616;
     width: 100%;
     height: 444px;
 }
+
 .footer-head {
     font-weight: 600;
     font-size: 40px;
@@ -175,37 +203,127 @@ aside {
     position: relative;
     top: 150px;
 }
-#br-line{
+
+#br-line {
     position: relative;
     top: 200px;
 }
-.footer-info ul{
+
+.footer-info ul {
     display: flex;
     justify-content: center;
     position: relative;
     top: 250px;
 }
 
-.footer-info ul li a{
+.footer-info ul li a {
     color: white;
     font-size: 16px;
     font-weight: 500;
     margin-left: 30px;
 }
+
 /* social link section */
-.social-link{
+.social-link {
     position: relative;
     top: 280px;
     display: flex;
     justify-content: center;
 }
-.fa-facebook-f,.fa-instagram{
+
+.fa-facebook-f,
+.fa-instagram {
     color: #161616;
     font-size: 30px;
     background-color: lightgray;
     padding: 15px;
     border-radius: 5px;
 }
-.fa-instagram{
+
+.fa-instagram {
     margin-left: 30px;
+}
+
+/* responsive mobile */
+@media screen and (max-width: 688px) {
+    .container {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    /* header responsive */
+    .web-head {
+        display: block;
+        background-color: #161616;
+        border-radius: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .head-text {
+        padding: 28px 0px 53px 28px;
+    }
+
+    .head-text h1 {
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        padding-right: 70px;
+        text-align: center;
+        position: relative;
+        left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .head-text p {
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .head-text button {
+        position: relative;
+        left: 65px;
+        font-size: 20px;
+    }
+
+    .head-image img {
+        width: 233px;
+        height: 245px;
+        position: relative;
+        top: 7px;
+        left: 65px;
+    }
+    /* main responsive */
+    .main-part {
+        display: block;
+    }
+    aside {
+        background-color: white;
+        padding: 0;
+        position: relative;
+        left: 45px;
+    }
+    .button-off,.button-on{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+        position: relative;
+        left: 20px;
+    }
+    .footer-bg{
+        height: 100vh;
+    }
+
+    .footer-info ul{
+        display: block;
+    }
+    .footer-info ul li{
+        margin-bottom: 40px;
+        text-align: center;
+    }
 }
