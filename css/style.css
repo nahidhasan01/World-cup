@@ -7,10 +7,13 @@
     text-decoration: none;
     list-style: none;
 }
-html,body{
+
+html,
+body {
     width: 100vw;
     overflow-x: hidden;
 }
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -134,7 +137,7 @@ aside {
     border: 1px solid lightgray;
     border-radius: 10px;
     /* width: 23%; */
-    max-width: 270px;
+    
 }
 
 .blog h4 {
@@ -337,5 +340,65 @@ aside {
     .footer-info ul li {
         margin-bottom: 40px;
         text-align: center;
+    }
+}
+
+/* tab view */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        max-width: 880px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .web-head{
+        margin-bottom: 80px;
+    }
+    .head-text{
+        width: 45%;
+        padding-left: 8%;
+    }
+    .head-text h1{
+        font-size: 40px;
+    }
+    .head-image{
+        width: 45%;
+        position: relative;
+    }
+    .head-image img{
+        width: 100%;
+        height: initial;
+        top: initial;
+        position: absolute;
+        bottom: 0px;
+    }
+    /* main part */
+    .main-part{
+        grid-template-columns: 1fr;
+    }
+    .main-part aside{
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background-color: transparent;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .main-part aside button{
+        flex: 1;
+        margin: 0;
+    }
+    .blogs{
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    .footer-bg{
+        height: 550px;
+    }
+    .footer-info ul{
+        flex-wrap: wrap;
     }
 }
