@@ -401,4 +401,14 @@ aside {
     .footer-info ul{
         flex-wrap: wrap;
     }
+    .hidden{
+        display: none;
+    }
+    .view-all{
+        text-align: center;
+    }
+    .view-all button{
+        visibility: visible;
+    }
+
 }
