@@ -7,7 +7,10 @@
     text-decoration: none;
     list-style: none;
 }
-
+html,body{
+    width: 100vw;
+    overflow-x: hidden;
+}
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -280,6 +283,9 @@ aside {
         font-size: 14px;
         text-align: center;
         margin-right: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .head-text button {
@@ -295,33 +301,40 @@ aside {
         top: 7px;
         left: 65px;
     }
+
     /* main responsive */
     .main-part {
         display: block;
     }
+
     aside {
         background-color: white;
         padding: 0;
         position: relative;
         left: 45px;
     }
-    .button-off,.button-on{
+
+    .button-off,
+    .button-on {
         margin: 0;
         margin-bottom: 20px;
     }
-    .blogs{
-        grid-template-columns: repeat(1,1fr);
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
         position: relative;
         left: 20px;
     }
-    .footer-bg{
+
+    .footer-bg {
         height: 100vh;
     }
 
-    .footer-info ul{
+    .footer-info ul {
         display: block;
     }
-    .footer-info ul li{
+
+    .footer-info ul li {
         margin-bottom: 40px;
         text-align: center;
     }
